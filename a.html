@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div class="goal-label">Goal State</div>
+    <div class="container">
+        <div class="goal" id="goalState">
+            <div class="tile">1</div>
+            <div class="tile">4</div>
+            <div class="tile">7</div>
+            <div class="tile">2</div>
+            <div class="tile">5</div>
+            <div class="tile">8</div>
+            <div class="tile">3</div>
+            <div class="tile">6</div>
+            <div class="tile empty"></div>
+        </div>
+
+        <div>
+            <h1>Solve the puzzle</h1>
+            <p id="message">You are given 14 moves to solve the problem.</p>
+            <div class="grid" id="puzzleGrid"></div>
+            <input type="text" id="moveInput" placeholder="Enter your move">
+            <button onclick="makeMove()">Make Move</button>
+            <p id="result"></p>
+            <p id="moveCount">Moves: 0</p>
+            <p id="moveLimitMessage"></p>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Modal Image">
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+
+    <script src="b.js"></script>
+</body>
+</html>
